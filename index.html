@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content = "width=device-width, initial-scale=1">
+    <title>Abhi-neighborhood Map</title>
+    <link rel ="stylesheet" href = "css/map Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id = "title-bar">
+        <a id = "hamburger" class = "fontawesome-align-justify"></a>
+        <h2 id = "heading">Abhi-Map: Tourist places</h2>
+     </div>
+
+    <div id="main">
+        <div id = "menu" class="close">
+            <div id = "searchBox">
+                <label for = "locValue">
+                    Search For:
+                </label>
+                <input id = "locValue" type="search" data-bind = "textInput: inputDet" placeholder="temples name">
+            </div>
+            <div class= "titles">
+                <ul data-bind="foreach: listArrays">
+                    <li id = "nameList" data-bind="text: name, click: $parent.clickOpen, visible: visibility"></li>
+                </ul>
+            </div>
+        </div>
+        <div id = "mainMap">
+            <div id = "myMap"></div>
+        </div>
+    </div>
+
+    <script>
+        var hamIcon = document.getElementById('hamburger');
+        var menu = document.getElementById('menu');
+
+        hamIcon.addEventListener('click', function(event){
+            menu.classList.toggle("open");
+            event.stopPropagation();
+        })
+    </script>
+    <script src = "js/main.js"></script>
+    <script src = "js/lib/knockout-3.4.2.js"></script>
+    <script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDqjKA0IX99XIz7-4i7SCDhEqj7uQ6z9MI&callback=initMap" onerror="errorMessage()">
+    </script>
+</body>
+</html>
