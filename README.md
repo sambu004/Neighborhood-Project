@@ -6,7 +6,7 @@ The project is to create a google map asyncronously and add markers to the locat
 
 ## Project Installation
 * Download the project and save it.
-* To use the map open `index.html`.
+* To use the map open `index.html` or click this [link](https://sambu004.github.io/Neighborhood-Project/index.html) to open.
 > This project is mobile Responsive so can be used in mobiles too.
 
 ## Map Functions
