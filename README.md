@@ -18,5 +18,5 @@ location _click_ the __hamburger__ icon in the left side.
 
 ### Credits
 * [Udacity forums](https://discussions.udacity.com/c/nd001-front-end-broadcast)
-* StackOverFlow is best for clearing doubts[stackoverflow](https://stackoverflow.com/)
+* StackOverFlow is best for clearing doubts [stackoverflow](https://stackoverflow.com/)
 
